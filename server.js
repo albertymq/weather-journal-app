@@ -36,13 +36,13 @@ function addlog(req, res) {
     temp: req.body.temp,
     content: req.body.content,
   };
-  console.log(projectData);
+  console.log("Data post",projectData);
   res.send(projectData);
 }
 
 //Get all projectData
 app.get("/all", sendData);
 function sendData(req, res) {
-  console.log(projectData);
+  console.log("send Data",projectData);
   res.send(projectData);
 }
